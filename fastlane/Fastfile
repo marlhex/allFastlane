@@ -18,8 +18,46 @@ default_platform(:ios)
 platform :ios do
   desc "Push a new release build to the App Store"
   lane :release do
+    match(type: "appstore")
     increment_build_number(xcodeproj: "AllFastlane.xcodeproj")
-    build_app(scheme: "AllFastlane")
-    upload_to_app_store
+    capture_screenshots
+    frame_screenshots(white: true)
+    build_app(
+      scheme: "AllFastlane",
+      export_method: "app-store"
+    )
+    upload_to_app_store(
+      submit_for_review: true,
+      force: true
+    )
+    clean_build_artifacts
   end
+
+  desc "Generating Screenshots for app store connect"
+  lane :screenshots do
+    capture_screenshots
+    frame_screenshots(white: true)
+    upload_to_app_store(
+    skip_binary_upload: true, # Skip uploading the binary
+    skip_metadata: true, # Skip uploading metadata
+    skip_screenshots: false # Only upload screenshots
+    )
+  end
+
+  desc "Push a new release build to TestFlight"
+  lane :beta do
+    get_certificates           # invokes cert
+    get_provisioning_profile   # invokes sigh
+    match(type: "appstore") # Changed to 'appstore' type to match the distribution method
+    increment_build_number(xcodeproj: "AllFastlane.xcodeproj")
+    build_app(
+      scheme: "AllFastlane",
+      export_method: "app-store" # Changed to 'app-store' to match the distribution method
+    )
+    upload_to_testflight(
+      skip_waiting_for_build_processing: false
+    )
+    clean_build_artifacts
+  end
+
 end

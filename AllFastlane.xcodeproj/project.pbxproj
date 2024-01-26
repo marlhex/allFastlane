@@ -12,7 +12,21 @@
 		3A4DA5F62B633398001E8F26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DA5F52B633398001E8F26 /* Assets.xcassets */; };
 		3A4DA5F92B633398001E8F26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DA5F82B633398001E8F26 /* Preview Assets.xcassets */; };
 		3A4DA6002B633C15001E8F26 /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DA5FF2B633C15001E8F26 /* fastlane */; };
+		3A4DA6022B637C8E001E8F26 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DA6012B637C8E001E8F26 /* Gemfile */; };
+		3A4DA60B2B638D59001E8F26 /* AllFastlaneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DA60A2B638D59001E8F26 /* AllFastlaneUITests.swift */; };
+		3A4DA60D2B638D59001E8F26 /* AllFastlaneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DA60C2B638D59001E8F26 /* AllFastlaneUITestsLaunchTests.swift */; };
+		3A4DA6152B638FCD001E8F26 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DA6142B638FCD001E8F26 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A4DA60E2B638D59001E8F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A4DA5E62B633396001E8F26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A4DA5ED2B633396001E8F26;
+			remoteInfo = AllFastlane;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3A4DA5EE2B633396001E8F26 /* AllFastlane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllFastlane.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +35,23 @@
 		3A4DA5F52B633398001E8F26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A4DA5F82B633398001E8F26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3A4DA5FF2B633C15001E8F26 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = "<group>"; };
+		3A4DA6012B637C8E001E8F26 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		3A4DA6032B637E64001E8F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3A4DA6082B638D59001E8F26 /* AllFastlaneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllFastlaneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A4DA60A2B638D59001E8F26 /* AllFastlaneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFastlaneUITests.swift; sourceTree = "<group>"; };
+		3A4DA60C2B638D59001E8F26 /* AllFastlaneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFastlaneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3A4DA6142B638FCD001E8F26 /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3A4DA5EB2B633396001E8F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A4DA6052B638D59001E8F26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,8 +64,11 @@
 		3A4DA5E52B633396001E8F26 = {
 			isa = PBXGroup;
 			children = (
+				3A4DA6142B638FCD001E8F26 /* SnapshotHelper.swift */,
+				3A4DA6012B637C8E001E8F26 /* Gemfile */,
 				3A4DA5FF2B633C15001E8F26 /* fastlane */,
 				3A4DA5F02B633396001E8F26 /* AllFastlane */,
+				3A4DA6092B638D59001E8F26 /* AllFastlaneUITests */,
 				3A4DA5EF2B633396001E8F26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				3A4DA5EE2B633396001E8F26 /* AllFastlane.app */,
+				3A4DA6082B638D59001E8F26 /* AllFastlaneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +85,7 @@
 		3A4DA5F02B633396001E8F26 /* AllFastlane */ = {
 			isa = PBXGroup;
 			children = (
+				3A4DA6032B637E64001E8F26 /* Info.plist */,
 				3A4DA5F12B633396001E8F26 /* AllFastlaneApp.swift */,
 				3A4DA5F32B633396001E8F26 /* ContentView.swift */,
 				3A4DA5F52B633398001E8F26 /* Assets.xcassets */,
@@ -68,6 +100,15 @@
 				3A4DA5F82B633398001E8F26 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3A4DA6092B638D59001E8F26 /* AllFastlaneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A4DA60A2B638D59001E8F26 /* AllFastlaneUITests.swift */,
+				3A4DA60C2B638D59001E8F26 /* AllFastlaneUITestsLaunchTests.swift */,
+			);
+			path = AllFastlaneUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +131,24 @@
 			productReference = 3A4DA5EE2B633396001E8F26 /* AllFastlane.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3A4DA6072B638D59001E8F26 /* AllFastlaneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A4DA6122B638D59001E8F26 /* Build configuration list for PBXNativeTarget "AllFastlaneUITests" */;
+			buildPhases = (
+				3A4DA6042B638D59001E8F26 /* Sources */,
+				3A4DA6052B638D59001E8F26 /* Frameworks */,
+				3A4DA6062B638D59001E8F26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A4DA60F2B638D59001E8F26 /* PBXTargetDependency */,
+			);
+			name = AllFastlaneUITests;
+			productName = AllFastlaneUITests;
+			productReference = 3A4DA6082B638D59001E8F26 /* AllFastlaneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +161,10 @@
 				TargetAttributes = {
 					3A4DA5ED2B633396001E8F26 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					3A4DA6072B638D59001E8F26 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 3A4DA5ED2B633396001E8F26;
 					};
 				};
 			};
@@ -119,6 +182,7 @@
 			projectRoot = "";
 			targets = (
 				3A4DA5ED2B633396001E8F26 /* AllFastlane */,
+				3A4DA6072B638D59001E8F26 /* AllFastlaneUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,9 +192,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4DA6022B637C8E001E8F26 /* Gemfile in Resources */,
 				3A4DA6002B633C15001E8F26 /* fastlane in Resources */,
 				3A4DA5F92B633398001E8F26 /* Preview Assets.xcassets in Resources */,
 				3A4DA5F62B633398001E8F26 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A4DA6062B638D59001E8F26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +218,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A4DA6042B638D59001E8F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4DA60D2B638D59001E8F26 /* AllFastlaneUITestsLaunchTests.swift in Sources */,
+				3A4DA60B2B638D59001E8F26 /* AllFastlaneUITests.swift in Sources */,
+				3A4DA6152B638FCD001E8F26 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A4DA60F2B638D59001E8F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A4DA5ED2B633396001E8F26 /* AllFastlane */;
+			targetProxy = 3A4DA60E2B638D59001E8F26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3A4DA5FA2B633398001E8F26 /* Debug */ = {
@@ -273,13 +363,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_ASSET_PATHS = "\"AllFastlane/Preview Content\"";
-				DEVELOPMENT_TEAM = 8N2TVY9NM7;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8N2TVY9NM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AllFastlane/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,6 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.marlhex.AllFastlane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.marlhex.AllFastlane";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,13 +398,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_ASSET_PATHS = "\"AllFastlane/Preview Content\"";
-				DEVELOPMENT_TEAM = 8N2TVY9NM7;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8N2TVY9NM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AllFastlane/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,9 +421,51 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.marlhex.AllFastlane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.marlhex.AllFastlane";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A4DA6102B638D59001E8F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 8N2TVY9NM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marlhex.AllFastlaneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AllFastlane;
+			};
+			name = Debug;
+		};
+		3A4DA6112B638D59001E8F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 8N2TVY9NM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marlhex.AllFastlaneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AllFastlane;
 			};
 			name = Release;
 		};
@@ -347,6 +486,15 @@
 			buildConfigurations = (
 				3A4DA5FD2B633398001E8F26 /* Debug */,
 				3A4DA5FE2B633398001E8F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A4DA6122B638D59001E8F26 /* Build configuration list for PBXNativeTarget "AllFastlaneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A4DA6102B638D59001E8F26 /* Debug */,
+				3A4DA6112B638D59001E8F26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
