@@ -11,6 +11,7 @@
 		3A4DA5F42B633396001E8F26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DA5F32B633396001E8F26 /* ContentView.swift */; };
 		3A4DA5F62B633398001E8F26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DA5F52B633398001E8F26 /* Assets.xcassets */; };
 		3A4DA5F92B633398001E8F26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DA5F82B633398001E8F26 /* Preview Assets.xcassets */; };
+		3A4DA6002B633C15001E8F26 /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DA5FF2B633C15001E8F26 /* fastlane */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3A4DA5F32B633396001E8F26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3A4DA5F52B633398001E8F26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A4DA5F82B633398001E8F26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3A4DA5FF2B633C15001E8F26 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		3A4DA5E52B633396001E8F26 = {
 			isa = PBXGroup;
 			children = (
+				3A4DA5FF2B633C15001E8F26 /* fastlane */,
 				3A4DA5F02B633396001E8F26 /* AllFastlane */,
 				3A4DA5EF2B633396001E8F26 /* Products */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4DA6002B633C15001E8F26 /* fastlane in Resources */,
 				3A4DA5F92B633398001E8F26 /* Preview Assets.xcassets in Resources */,
 				3A4DA5F62B633398001E8F26 /* Assets.xcassets in Resources */,
 			);
@@ -269,6 +273,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AllFastlane/Preview Content\"";
@@ -287,6 +292,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marlhex.AllFastlane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AllFastlane/Preview Content\"";
@@ -316,6 +323,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marlhex.AllFastlane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
